@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SageTv</Name>
+  <Repository>notsteve/sagetv-unraid</Repository>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Description>SageTv for Unraid</Description>
+  <Icon>http://forums.sagetv.com/forums/images/misc/SagetvLogo170.jpg</Icon>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment/>
+  <Config Name="Videos" Target="/var/media/videos" Default="" Mode="rw" Description="Container Path: /var/media/videos" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/Media_unprot/</Config>
+  <Config Name="Music" Target="/var/media/music" Default="" Mode="rw" Description="Container Path: /var/media/music" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/Media_unprot/</Config>
+  <Config Name="Pictures" Target="/var/media/pictures" Default="" Mode="rw" Description="Container Path: /mnt/var/media/pictures" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/Media_unprot/</Config>
+  <Config Name="Recordings" Target="/var/recordings" Default="" Mode="rw" Description="Container Path: /mnt/var/recordings" Type="Path" Display="always" Required="false" Mask="false">/mnt/disks/Media_unprot/SageTv/</Config>
+  <Config Name="SageTv Data" Target="/sagetv" Default="" Mode="rw" Description="Container Path: /opt/sagetv" Type="Path" Display="always" Required="yes" Mask="false"></Config>
+</Container>
