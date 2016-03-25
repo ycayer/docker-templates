@@ -17,6 +17,31 @@
     <Publish/>
   </Networking>
   <Data>
+    <Volume>
+      <HostDir>/mnt/user/Media//videos</HostDir>
+      <ContainerDir>/var/media/videos</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/music/</HostDir>
+      <ContainerDir>/var/media/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/pictures/</HostDir>
+      <ContainerDir>/var/media/pictures</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+      <Volume>
+      <HostDir>/mnt/user/Media/Recordings/</HostDir>
+      <ContainerDir>/var/recordings</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/SageTv</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment/>
   <Config Name="Videos" Target="/var/media/videos" Default="" Mode="rw" Description="Container Path: /var/media/videos" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media//videos</Config>
