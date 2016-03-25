@@ -39,7 +39,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/SageTv</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/sagetv</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -48,5 +48,5 @@
   <Config Name="Music" Target="/var/media/music" Default="" Mode="rw" Description="Container Path: /var/media/music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/music/</Config>
   <Config Name="Pictures" Target="/var/media/pictures" Default="" Mode="rw" Description="Container Path: /mnt/var/media/pictures" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/pictures/</Config>
   <Config Name="Recordings" Target="/var/recordings" Default="" Mode="rw" Description="Container Path: /mnt/var/recordings" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Recordings/</Config>
-  <Config Name="SageTv Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="yes" Mask="false">/mnt/user/appdata</Config>
+  <Config Name="SageTv Config" Target="/sagetv" Default="" Mode="rw" Description="appData Container Path: /sagetv" Type="Path" Display="always" Required="yes" Mask="false">/mnt/user/appdata</Config>
 </Container>
